@@ -4,7 +4,7 @@ pipeline {
         stage('Clone') {
             steps {
                 git url: 'https://github.com/Shangamesh2805/Terraform_Jenkins_Multi_Pipeline.git', 
-                    branch: env.gitlabSourceBranch
+                branch: 'main'
             }
         }
         stage('Check Terraform Installation') {
